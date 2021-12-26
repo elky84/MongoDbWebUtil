@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
 
 	<PackageId>MongoDbWebUtil</PackageId>
-	<Version>1.0.3</Version>
+	<Version>1.0.4</Version>
 	<Authors>elky</Authors>
 	<Company>elky</Company>
 	<PackageReadmeFile>README.md</PackageReadmeFile>

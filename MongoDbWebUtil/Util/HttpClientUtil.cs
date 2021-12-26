@@ -36,6 +36,22 @@ namespace MongoDbWebUtil.Util
             return await client.SendAsync(request);
         }
 
+
+        public static async Task<T> Request<T>(this IHttpClientFactory httpClientFactory,
+            HttpMethod httpMethod, string url)
+        {
+            using var client = httpClientFactory.CreateClient();
+            return await client.Request<T>(httpMethod, url);
+        }
+
+        public static async Task<T> Request<T>(this HttpClient httpClient,
+            HttpMethod httpMethod, string url)
+        {
+            var request = new HttpRequestMessage(httpMethod, url);
+            var httpResponse = await httpClient.SendAsync(request);
+            return await httpResponse.ResponseDeserialize<T>();
+        }
+
         private static async Task<T> ResponseDeserialize<T>(this HttpResponseMessage httpResponse)
         {
             return JsonConvert.DeserializeObject<T>(await httpResponse.Content.ReadAsStringAsync());
