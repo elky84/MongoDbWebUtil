@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+
+	<PackageId>MongoDbWebUtil</PackageId>
+	<Version>1.0.3</Version>
+	<Authors>elky</Authors>
+	<Company>elky</Company>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+
+	<PackageDescription>MongoDbWebUtil. (need ASP.NET)</PackageDescription>
+    <RepositoryUrl>https://github.com/elky84/MongoDbWebUtil</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="MongoDB.Driver" Version="2.11.2" />
+  </ItemGroup>
+</Project>
