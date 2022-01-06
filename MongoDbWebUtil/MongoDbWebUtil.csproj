@@ -11,9 +11,11 @@
 
 	<PackageDescription>MongoDbWebUtil. (need ASP.NET)</PackageDescription>
     <RepositoryUrl>https://github.com/elky84/MongoDbWebUtil</RepositoryUrl>
+	<PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
+	<None Include="..\LICENSE" Pack="true" PackagePath="\"/>
     <None Include="..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
