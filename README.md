@@ -25,3 +25,9 @@ Codes that can be useful even when using MongoDB as an auxiliary are included, s
 ## nuget
 
 <https://www.nuget.org/packages/MongoDbWebUtil/>
+
+## Version History
+
+### v1.0.8
+
+move general web & c# utility codes to EzAspDotNet.
