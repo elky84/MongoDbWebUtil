@@ -13,6 +13,13 @@
 
 # MongoDbWebUtil
 
+## *!! Important !!*
+
+Features move to [EzAspDotNet](https://github.com/elky84/EzAspDotNet)
+
+Please use to [EzAspDotNet](https://github.com/elky84/EzAspDotNet)
+
+This repository and package not maintenance.
 
 ## introduce
 
